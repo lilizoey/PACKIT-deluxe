@@ -1,6 +1,6 @@
 extends Node2D
 
-signal spawn_item(item)
+signal spawned_item(item)
 
 var inventory_node: Node2D
 var item_scene = preload("res://Item/Item.tscn")

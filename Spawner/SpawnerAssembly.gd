@@ -1,6 +1,7 @@
 extends Node2D
 
 signal done_setup()
+signal spawned_item(id, item)
 
 export var spawn_delay: float
 export var inventory_path: NodePath

@@ -9,6 +9,33 @@
 position = Vector2( 240, 135 )
 
 [node name="SpawnerAssembly" parent="." instance=ExtResource( 2 )]
-position = Vector2( 90, 135 )
+position = Vector2( 110, 135 )
 spawn_delay = 0.2
 inventory_path = NodePath("../Inventory")
+
+[node name="Panel" type="Panel" parent="."]
+margin_left = 324.609
+margin_top = 48.2195
+margin_right = 414.609
+margin_bottom = 210.219
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="RichTextLabel" type="RichTextLabel" parent="Panel"]
+margin_right = 90.0
+margin_bottom = 18.0
+text = "Item Name"
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="RichTextLabel2" type="RichTextLabel" parent="Panel"]
+margin_left = 1.0
+margin_top = 23.0
+margin_right = 91.0
+margin_bottom = 124.0
+text = "insert pun here"
+__meta__ = {
+"_edit_use_anchors_": false
+}
