@@ -1,0 +1,23 @@
+[gd_scene load_steps=4 format=2]
+
+[ext_resource path="res://Inventory/Inventory.gd" type="Script" id=1]
+[ext_resource path="res://Sprites/Boxes/box3x3.png" type="Texture" id=2]
+[ext_resource path="res://Sprites/Boxes/box3x3Closed.png" type="Texture" id=3]
+
+[node name="Inventory" type="Node2D"]
+script = ExtResource( 1 )
+open_box = ExtResource( 2 )
+closed_box = ExtResource( 3 )
+
+[node name="Sprite" type="Sprite" parent="."]
+texture = ExtResource( 2 )
+
+[node name="Button" type="Button" parent="."]
+margin_left = -37.0
+margin_top = 40.0
+margin_right = 36.0
+margin_bottom = 60.0
+__meta__ = {
+"_edit_use_anchors_": false
+}
+[connection signal="pressed" from="Button" to="." method="pack_box"]
